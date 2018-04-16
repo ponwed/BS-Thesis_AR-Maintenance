@@ -9,8 +9,6 @@ public class RenderControl : MonoBehaviour {
     private IEnumerable<TrackableBehaviour> trackables;
 
 	void Start () {
-
-        trackableBehaviour = GetComponent<TrackableBehaviour>();
         GameObject[] markers = GameObject.FindGameObjectsWithTag("Marker");
 
         foreach (var marker in markers)
