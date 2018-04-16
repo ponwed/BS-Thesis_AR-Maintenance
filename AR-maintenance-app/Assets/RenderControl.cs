@@ -7,7 +7,6 @@ public class RenderControl : MonoBehaviour {
 
     private StateManager sm;
     private IEnumerable<TrackableBehaviour> trackables;
-    private TrackableBehaviour trackableBehaviour;
 
 	void Start () {
 
