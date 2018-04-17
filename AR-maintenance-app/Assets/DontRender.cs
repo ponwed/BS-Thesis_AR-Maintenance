@@ -5,9 +5,7 @@ using UnityEngine;
 public class DontRender : MonoBehaviour {
 
 	void Start () {
-        //gameObject.SetActive(false);
-        Renderer rend = GetComponent<Renderer>();
-        rend.enabled = false;
+        gameObject.SetActive(false);
 	}
 
 }
