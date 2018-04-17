@@ -2,37 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
+using System.Linq;
 
 public class RenderControl : MonoBehaviour {
 
     private StateManager sm;
     private IEnumerable<TrackableBehaviour> trackables;
+    private Renderer centerCubeRend;
 
-	void Start () {
-        GameObject[] markers = GameObject.FindGameObjectsWithTag("Marker");
-
-        foreach (var marker in markers)
-        {
-            for (int i = 0; i < marker.transform.childCount; i++)
-            {
-                marker.transform.GetChild(i).gameObject.SetActive(false);
-            }
-        }
+    void Start ()
+    {
+        centerCubeRend = GameObject.Find("CenterCube").GetComponent<Renderer>();
     }
 	
-	void Update () {
+	void Update ()
+    {
         sm = TrackerManager.Instance.GetStateManager();
         trackables = sm.GetActiveTrackableBehaviours();
 
-        foreach (var tb in trackables)
-        {
-            if (tb.name == "MarkerLeft")
-            {
-                for (int i = 0; i < tb.transform.childCount; i++)
-                {
-                    tb.transform.GetChild(i).gameObject.SetActive(true);
-                }
-            }
-        }
+        if (trackables.Any())
+            centerCubeRend.enabled = true;
+        else
+            centerCubeRend.enabled = false;
+
     }
 }
