@@ -26,13 +26,6 @@ public class ViewState : MonoBehaviour {
         Toggle();
         Debug.Log("View state starting ");
     }
-	
-	/// <summary>
-    /// Called every frame.
-    /// </summary>
-	void Update () {
-		
-	}
 
     /// <summary>
     /// Go to next state.
@@ -54,6 +47,16 @@ public class ViewState : MonoBehaviour {
         state--;
         Toggle();
         Debug.Log("Previous state " + state);
+    }
+
+    public bool AtLastState()
+    {
+        return state == stateCount - 1;
+    }
+
+    public bool AtFirstState()
+    {
+        return state == 0;
     }
 
     /// <summary>
