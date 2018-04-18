@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 80f99dd53a8cac241856511e509449a5
+timeCreated: 1524050685
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BezierCurve
+    100002: Camera
+    100004: Chassi
+    100006: Chassi_Boxes
+    100008: Chassi_Boxes.001
+    100010: Chassi_Door
+    100012: Chassi_Support_Beam
+    100014: Circuit_Main
+    100016: Circuit_Power
+    100018: Circuit_Standing01
+    100020: Circuit_Standing02
+    100022: CircuitBlock02
+    100024: CircuitBlock02.001
+    100026: Cube
+    100028: Cylinder.001
+    100030: DVI_Circuit
+    100032: DVI_Circuit.001
+    100034: PowerCable
+    100036: Sleigh
+    100038: Sleigh_DVI
+    100040: Sleigh_VGA
+    100042: //RootNode
+    100044: VGA
+    100046: VGAHOLE
+    400000: BezierCurve
+    400002: Camera
+    400004: Chassi
+    400006: Chassi_Boxes
+    400008: Chassi_Boxes.001
+    400010: Chassi_Door
+    400012: Chassi_Support_Beam
+    400014: Circuit_Main
+    400016: Circuit_Power
+    400018: Circuit_Standing01
+    400020: Circuit_Standing02
+    400022: CircuitBlock02
+    400024: CircuitBlock02.001
+    400026: Cube
+    400028: Cylinder.001
+    400030: DVI_Circuit
+    400032: DVI_Circuit.001
+    400034: PowerCable
+    400036: Sleigh
+    400038: Sleigh_DVI
+    400040: Sleigh_VGA
+    400042: //RootNode
+    400044: VGA
+    400046: VGAHOLE
+    2000000: Camera
+    2100000: Material
+    2100002: No Name
+    2300000: BezierCurve
+    2300002: Chassi
+    2300004: Chassi_Boxes
+    2300006: Chassi_Boxes.001
+    2300008: Chassi_Door
+    2300010: Chassi_Support_Beam
+    2300012: Circuit_Main
+    2300014: Circuit_Power
+    2300016: Circuit_Standing01
+    2300018: Circuit_Standing02
+    2300020: CircuitBlock02
+    2300022: CircuitBlock02.001
+    2300024: Cube
+    2300026: Cylinder.001
+    2300028: DVI_Circuit
+    2300030: DVI_Circuit.001
+    2300032: PowerCable
+    2300034: Sleigh
+    2300036: Sleigh_DVI
+    2300038: Sleigh_VGA
+    2300040: VGA
+    2300042: VGAHOLE
+    3300000: BezierCurve
+    3300002: Chassi
+    3300004: Chassi_Boxes
+    3300006: Chassi_Boxes.001
+    3300008: Chassi_Door
+    3300010: Chassi_Support_Beam
+    3300012: Circuit_Main
+    3300014: Circuit_Power
+    3300016: Circuit_Standing01
+    3300018: Circuit_Standing02
+    3300020: CircuitBlock02
+    3300022: CircuitBlock02.001
+    3300024: Cube
+    3300026: Cylinder.001
+    3300028: DVI_Circuit
+    3300030: DVI_Circuit.001
+    3300032: PowerCable
+    3300034: Sleigh
+    3300036: Sleigh_DVI
+    3300038: Sleigh_VGA
+    3300040: VGA
+    3300042: VGAHOLE
+    4300000: VGA
+    4300002: BezierCurve
+    4300004: Cylinder.001
+    4300006: PowerCable
+    4300008: Circuit_Power
+    4300010: CircuitBlock02
+    4300012: CircuitBlock02.001
+    4300014: Circuit_Standing02
+    4300016: Circuit_Standing01
+    4300018: Circuit_Main
+    4300020: Chassi_Support_Beam
+    4300022: Sleigh_VGA
+    4300024: DVI_Circuit.001
+    4300026: VGAHOLE
+    4300028: Chassi_Boxes.001
+    4300030: Sleigh_DVI
+    4300032: DVI_Circuit
+    4300034: Sleigh
+    4300036: Cube
+    4300038: Chassi_Door
+    4300040: Chassi_Boxes
+    4300042: Chassi
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

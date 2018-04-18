@@ -5,13 +5,15 @@ using Vuforia;
 
 public class PersistentTracking : MonoBehaviour {
 
+    public bool persistentTracking;
+
 	void Start () {
         VuforiaARController.Instance.RegisterVuforiaStartedCallback(OnVuforiaStarted);
 	}
 
 	void OnVuforiaStarted () {
         ObjectTracker tracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
-        bool success = tracker.PersistExtendedTracking(true);
+        bool success = tracker.PersistExtendedTracking(persistentTracking);
 
         Debug.Log("PTracking: " + success);
 	}
