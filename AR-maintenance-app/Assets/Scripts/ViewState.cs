@@ -8,8 +8,8 @@ public class ViewState : MonoBehaviour {
     int stateCount;
     Transform marker;
     public GameObject tracker; // Passed via Unity GUI
-    public RenderStep3 renderStep3;
-    public int sleighStepIndex;
+    public RenderSmallMarker renderStep3, renderStep8;
+    public int sleighStepIndex, sleighStepIndexTwo;
 
     /// <summary>
     /// Initialization of the instance.
@@ -80,8 +80,14 @@ public class ViewState : MonoBehaviour {
         /* Special case for sled marker */
         if (state == sleighStepIndex)
             renderStep3.Render(true);
+        else if (state == sleighStepIndexTwo)
+            renderStep8.Render(true);
         else
+        {
             renderStep3.Render(false);
+            renderStep8.Render(false);
+        }
+            
     }
 
     public int GetState()
