@@ -41,6 +41,7 @@ public class RenderSmallMarker : MonoBehaviour {
             }        
         }
         else
+
         {
             ToggleSprites(false);
         }
