@@ -37,6 +37,7 @@ public class Animate : MonoBehaviour {
         var x = origin.x;
         var y = origin.y;
         var z = origin.z;
+
         float moveDistance = distance * Mathf.Pow(deltaPosition, easeInFactor);
 
         // Scalse moving distance by object scale and add distance to chosen axis

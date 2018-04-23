@@ -8,7 +8,7 @@ public class RenderSmallMarker : MonoBehaviour {
 
     public ViewState viewState;
     public GameObject tracker;
-    public GameObject indicatorCircle;
+    public GameObject indicator;
     private Transform marker;
     private bool visible;
 
@@ -31,12 +31,12 @@ public class RenderSmallMarker : MonoBehaviour {
             
             if (trackables.FirstOrDefault(GameObject => GameObject.name == tracker.name))
             {
-                indicatorCircle.GetComponent<Renderer>().enabled = false;
+                ToggleRenderer(false);
                 ToggleSprites(visible);
             }
             else
             {
-                indicatorCircle.GetComponent<Renderer>().enabled = true;
+                ToggleRenderer(true);
                 ToggleSprites(false);
             }        
         }
@@ -55,6 +55,14 @@ public class RenderSmallMarker : MonoBehaviour {
                 marker.GetChild(i).GetComponent<Renderer>().enabled = b;
             else
                 marker.GetChild(i).GetChild(0).GetComponent<SpriteRenderer>().enabled = b;
+        }
+    }
+
+    private void ToggleRenderer(bool render)
+    {
+        foreach (var r in indicator.GetComponentsInChildren<Renderer>())
+        {
+            r.enabled = render;
         }
     }
 
