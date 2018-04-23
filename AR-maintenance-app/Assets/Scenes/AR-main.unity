@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3093,7 +3093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   viewState: {fileID: 892222789}
   tracker: {fileID: 581574806}
-  indicator: {fileID: 0}
+  indicator: {fileID: 622673869}
 --- !u!4 &802342782 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 62dfcdbdb0d6f6147926864937ff408a, type: 3}
@@ -3361,7 +3361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   viewState: {fileID: 892222789}
   tracker: {fileID: 532536008}
-  indicator: {fileID: 0}
+  indicator: {fileID: 303079188}
 --- !u!1 &892222788
 GameObject:
   m_ObjectHideFlags: 0
