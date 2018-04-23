@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour {
 
@@ -15,6 +16,7 @@ public class Reset : MonoBehaviour {
 
     void ResetInstructions()
     {
-        viewState.Initialize();
+        Application.Quit();
+        //viewState.Initialize();
     }
 }
