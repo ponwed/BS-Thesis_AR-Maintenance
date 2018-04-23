@@ -15,11 +15,17 @@ public class ViewState : MonoBehaviour {
     /// Initialization of the instance.
     /// </summary>
     void Start () {
+        Initialize();
+    }
+
+    public void Initialize()
+    {
         state = 0;
         try
         {
             marker = tracker.transform;
-        } catch(Exception e)
+        }
+        catch (Exception e)
         {
             Debug.Log("No Tracker defined.");
             throw e;
