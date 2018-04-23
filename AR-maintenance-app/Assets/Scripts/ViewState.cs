@@ -8,6 +8,8 @@ public class ViewState : MonoBehaviour {
     int stateCount;
     Transform marker;
     public GameObject tracker; // Passed via Unity GUI
+    public RenderSmallMarker renderStep3, renderStep8;
+    public int sleighStepIndex, sleighStepIndexTwo;
 
     /// <summary>
     /// Initialization of the instance.
@@ -66,16 +68,31 @@ public class ViewState : MonoBehaviour {
     {
         for(var i = 0; i < stateCount; i++)
         {
-            bool visible = false;
+            bool visible = i == state;
             var child = marker.GetChild(i);
 
-            if (i == state) visible = true;
-
-            foreach(var r in child.GetComponentsInChildren<Renderer>(true))
+            foreach (var r in child.GetComponentsInChildren<Renderer>(true))
             {
                 r.enabled = visible;
-            }
+            }           
         }
+
+        /* Special case for sled marker */
+        if (state == sleighStepIndex)
+            renderStep3.Render(true);
+        else if (state == sleighStepIndexTwo)
+            renderStep8.Render(true);
+        else
+        {
+            renderStep3.Render(false);
+            renderStep8.Render(false);
+        }
+            
+    }
+
+    public int GetState()
+    {
+        return state;
     }
 
 }
