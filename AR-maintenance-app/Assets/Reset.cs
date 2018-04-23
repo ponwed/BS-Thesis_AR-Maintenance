@@ -7,16 +7,14 @@ using UnityEngine.SceneManagement;
 public class Reset : MonoBehaviour {
 
     private Button btn;
-    public ViewState viewState;
 
 	void Start () {
         btn = GetComponent<Button>();
-        btn.onClick.AddListener(ResetInstructions);       
+        btn.onClick.AddListener(ExitApp);       
 	}
 
-    void ResetInstructions()
+    void ExitApp()
     {
         Application.Quit();
-        //viewState.Initialize();
     }
 }
