@@ -560,6 +560,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112384662}
   m_Mesh: {fileID: 4300008, guid: 80f99dd53a8cac241856511e509449a5, type: 3}
+<<<<<<< HEAD
 --- !u!4 &112795276 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 62dfcdbdb0d6f6147926864937ff408a, type: 3}
@@ -587,6 +588,8 @@ MonoBehaviour:
   rotateDegrees: 25
   speed: 0.01
   easeInFactor: 2
+=======
+>>>>>>> 314ad12d04b59cd582fe0db7dc4a93c98162b57a
 --- !u!1 &155866633
 GameObject:
   m_ObjectHideFlags: 0
