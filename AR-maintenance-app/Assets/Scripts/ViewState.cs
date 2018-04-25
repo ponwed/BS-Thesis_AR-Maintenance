@@ -77,6 +77,12 @@ public class ViewState : MonoBehaviour {
             bool visible = i == state;
             var child = marker.GetChild(i);
 
+            // Show/Hide caption for step
+            Caption caption = null;
+            if((caption = child.GetComponent<Caption>()) != null) {
+                caption.SetVisibility(visible);
+            }
+
             foreach (var r in child.GetComponentsInChildren<Renderer>(true))
             {
                 r.enabled = visible;
