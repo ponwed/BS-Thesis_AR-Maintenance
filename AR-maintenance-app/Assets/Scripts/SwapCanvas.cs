@@ -4,16 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour {
+public class SwapCanvas : MonoBehaviour {
 
-	// Use this for initialization
+    public Canvas fromCanvas, toCanvas;
+
 	void Start () {
         Button btn = GetComponent<Button>();
-        btn.onClick.AddListener(LoadARScene);
+        btn.onClick.AddListener(Swap);
 	}
 	
-	void LoadARScene()
+	void Swap()
     {
-        SceneManager.LoadScene("AR-main");
+        fromCanvas.enabled = false;
+        toCanvas.enabled = true;
     }
 }
