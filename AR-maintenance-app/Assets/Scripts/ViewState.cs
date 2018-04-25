@@ -10,6 +10,7 @@ public class ViewState : MonoBehaviour {
     public GameObject tracker; // Passed via Unity GUI
     public RenderSmallMarker renderStep3, renderStep8;
     public int sleighStepIndex, sleighStepIndexTwo;
+    public GameObject directionObject;
 
     /// <summary>
     /// Initialization of the instance.
@@ -72,6 +73,7 @@ public class ViewState : MonoBehaviour {
     /// </summary>
     void Toggle()
     {
+        directionObject.GetComponent<DirectionGuide>().Hide();
         for(var i = 0; i < stateCount; i++)
         {
             bool visible = i == state;
