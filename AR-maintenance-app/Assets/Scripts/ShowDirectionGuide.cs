@@ -2,48 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShowDirectionGuide : MonoBehaviour {
+public class ShowDirectionGuide : MonoBehaviour
+{
 
     public GameObject directionObject;
     private DirectionGuide directionGuide;
-    private bool visible;
+    private float screenWidth, screenHeight;
+    private Camera cam;
 
-	void Start () {
+    void Start()
+    {
         directionGuide = directionObject.GetComponent<DirectionGuide>();
-        visible = false;
-    }
-	
-	void Update () {
 
+        cam = Camera.main;
+        screenHeight = Screen.height;
+        screenWidth = Screen.width;
+    }
+
+    void Update()
+    {
         if (GetComponent<Renderer>().enabled)
         {
+            Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
             directionGuide.SetTarget(transform);
-            if (!visible)
+
+            if (screenPos.y > 0 && screenPos.y < screenHeight && screenPos.x > 0 && screenPos.x < screenWidth)
+            {
+                directionGuide.Hide();
+            }
+            else
             {
                 directionGuide.Show();
-                visible = !visible;
             }
-        }
-        else
-        {
-            visible = false;
-        }
-    }
 
-    private void OnBecameInvisible()
-    {
-        if (GetComponent<Renderer>().enabled)
-        {
-            directionGuide.Show();
-            visible = true;
-        }  
-    }
+        }
 
-    private void OnBecameVisible()
-    {
-        if (GetComponent<Renderer>().enabled)
-        {
-            directionGuide.Hide();
-        }      
     }
 }

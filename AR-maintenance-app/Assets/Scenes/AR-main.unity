@@ -838,15 +838,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.03
+      value: 2.962
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.49
+      value: 0.177
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1713,6 +1713,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 338845124}
+  - component: {fileID: 338845125}
   m_Layer: 15
   m_Name: Step08
   m_TagString: Untagged
@@ -1736,6 +1737,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &338845125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338845123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: Koppla in kabel
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1001 &347809284
 Prefab:
   m_ObjectHideFlags: 0
@@ -2227,6 +2245,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 441835106}
+  - component: {fileID: 441835107}
   m_Layer: 12
   m_Name: Step05
   m_TagString: Untagged
@@ -2250,6 +2269,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &441835107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441835105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: Ta ut komponent
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1 &453016521
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,11 +2912,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.97
+      value: 3.083
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 0.012
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3104,11 +3140,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.42
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.55
+      value: 1.892
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3734,7 +3770,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 622673869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6537d4eca4dce3d4abccdcc6fe2c0a2a, type: 3}
   m_Name: 
@@ -3822,6 +3858,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 690850210}
+  - component: {fileID: 690850211}
   m_Layer: 18
   m_Name: Step11
   m_TagString: Untagged
@@ -3845,6 +3882,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &690850211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690850209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: "Montera st\xF6dpelaren"
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1 &695852454
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,6 +4697,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 921260446}
+  - component: {fileID: 921260447}
   m_Layer: 16
   m_Name: Step09
   m_TagString: Untagged
@@ -4666,6 +4721,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921260447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921260445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: "F\xE4st kabel i kl\xE4mmor"
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1001 &939031231
 Prefab:
   m_ObjectHideFlags: 0
@@ -4779,6 +4851,10 @@ Prefab:
       propertyPath: m_Layer
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 2e470a644da21b947a06ebdc92db6fef, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 889a8c6ed6b851548a55a8a2e37ce317, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e470a644da21b947a06ebdc92db6fef, type: 3}
   m_IsPrefabParent: 0
@@ -4915,6 +4991,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1014183555}
+  - component: {fileID: 1014183556}
   m_Layer: 10
   m_Name: Step03
   m_TagString: Untagged
@@ -4938,6 +5015,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014183556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014183554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: Koppla loss kabel
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1 &1028963846
 GameObject:
   m_ObjectHideFlags: 0
@@ -5115,7 +5209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.518066, y: -811}
+  m_AnchoredPosition: {x: 10.5, y: -811}
   m_SizeDelta: {x: 1291, y: 496.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049395755
@@ -5545,7 +5639,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1127744160
 RectTransform:
@@ -5988,7 +6082,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.84
+      value: 1.301
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6232,7 +6326,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1166869994}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a56bf34c51ba274ab721e4f95660d7c, type: 3}
   m_Name: 
@@ -6393,6 +6487,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1177963266}
+  - component: {fileID: 1177963267}
   m_Layer: 20
   m_Name: Step12
   m_TagString: Untagged
@@ -6415,6 +6510,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1177963267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177963265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: "Montera sk\xE5psluckan"
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1001 &1195356268
 Prefab:
   m_ObjectHideFlags: 0
@@ -6698,11 +6810,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.227
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.174
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7192,6 +7304,10 @@ Prefab:
       propertyPath: m_Layer
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 697bc16423de91447b99f4bd39730f45, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 889a8c6ed6b851548a55a8a2e37ce317, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 697bc16423de91447b99f4bd39730f45, type: 3}
   m_IsPrefabParent: 0
@@ -8040,7 +8156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -466.7, y: 80.19995}
+  m_AnchoredPosition: {x: -466.75, y: 80.25}
   m_SizeDelta: {x: 154.8, y: 154.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589187518
@@ -8112,6 +8228,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1672421341}
+  - component: {fileID: 1672421342}
   m_Layer: 14
   m_Name: Step07
   m_TagString: Untagged
@@ -8140,6 +8257,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1672421342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1672421340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: Koppla ny kabel
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1 &1696424644
 GameObject:
   m_ObjectHideFlags: 0
@@ -8717,7 +8851,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 0.083
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8821,7 +8955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
-  captionText: Ta av lock
+  captionText: "Montera av sk\xE5pslucka"
   rightMargin: 160
   height: 160
   minFontSize: 20
@@ -8948,7 +9082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
-  captionText: hej
+  captionText: Koppla loss kabel
   rightMargin: 160
   height: 160
   minFontSize: 20
@@ -8961,6 +9095,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1820390694}
+  - component: {fileID: 1820390695}
   m_Layer: 11
   m_Name: Step04
   m_TagString: Untagged
@@ -8985,6 +9120,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1820390695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1820390693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: "Lossa kabel ur kl\xE4mmor"
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!21 &1823494685
 Material:
   serializedVersion: 6
@@ -9680,6 +9832,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1971121297}
+  - component: {fileID: 1971121298}
   m_Layer: 17
   m_Name: Step10
   m_TagString: Untagged
@@ -9694,7 +9847,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1971121296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.128, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 28483011}
@@ -9702,6 +9855,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1971121298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1971121296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: "Byt l\xE4ge p\xE5 brytaren"
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1001 &1990579812
 Prefab:
   m_ObjectHideFlags: 0
@@ -10301,11 +10471,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.55
+      value: 1.182
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.36
+      value: 1.905
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10461,6 +10631,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2105889229}
+  - component: {fileID: 2105889230}
   m_Layer: 13
   m_Name: Step06
   m_TagString: Untagged
@@ -10485,6 +10656,23 @@ Transform:
   m_Father: {fileID: 2071196285}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2105889230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2105889228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1f66ffa1cccff4da62d264ab3be913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 223945393109370824, guid: 393ad2b6892967b43b623320858ac851, type: 2}
+  captionText: "F\xF6r in ny komponent"
+  rightMargin: 160
+  height: 160
+  minFontSize: 20
+  maxFontSize: 52
 --- !u!1001 &2107100428
 Prefab:
   m_ObjectHideFlags: 0
@@ -10498,7 +10686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.28
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 4554698490634006, guid: 0889472c98f89bd469ea3553b511d0a1, type: 2}
       propertyPath: m_LocalPosition.z

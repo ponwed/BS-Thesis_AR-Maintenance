@@ -23,7 +23,6 @@ public class Caption : MonoBehaviour {
 
         var width = canvas.GetComponent<RectTransform>().rect.width - rightMargin;
         panelTransform.sizeDelta = new Vector2(width, height);
-        Debug.Log("Width :" + canvas.GetComponent<RectTransform>().rect.width + "Height :" + canvas.GetComponent<RectTransform>().rect.height);
 
         var textField = panel.GetChild(0);
         textField.GetComponent<Text>().text = captionText;
