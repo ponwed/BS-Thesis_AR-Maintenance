@@ -60,6 +60,9 @@ public class RenderSmallMarker : MonoBehaviour {
 
     private void ToggleRenderer(bool render)
     {
+        if (indicator == null)
+            return;
+
         foreach (var r in indicator.GetComponentsInChildren<Renderer>())
         {
             r.enabled = render;
