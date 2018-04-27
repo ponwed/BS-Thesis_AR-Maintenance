@@ -8,6 +8,7 @@ public class ShowDirectionGuide : MonoBehaviour
     public GameObject directionObject;
     private DirectionGuide directionGuide;
     private float screenWidth, screenHeight;
+    private float screenFraction = 5;
     private Camera cam;
 
     void Start()
@@ -26,7 +27,10 @@ public class ShowDirectionGuide : MonoBehaviour
             Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
             directionGuide.SetTarget(transform);
 
-            if (screenPos.y > 0 && screenPos.y < screenHeight && screenPos.x > 0 && screenPos.x < screenWidth)
+            float heightMargin = screenHeight / screenFraction;
+            float widthMargin = screenWidth / screenFraction;
+
+            if (screenPos.y > heightMargin && screenPos.y < screenHeight - heightMargin && screenPos.x > widthMargin && screenPos.x < screenWidth - widthMargin)
             {
                 directionGuide.Hide();
             }
