@@ -23,7 +23,9 @@ public class RotationAnimate : MonoBehaviour {
     private float deltaDegree;
     private float rotate;
 
-    // Use this for initialization
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
     void Start () {
         deltaDegree = 0.0f;
         rotate = 0.0f;
@@ -48,12 +50,13 @@ public class RotationAnimate : MonoBehaviour {
             case RotationDirection.Back:
                 rotationAxis = Vector3.back;
                 break;
-
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    /// <summary>
+    /// Runs once every frame
+    /// </summary>
+    void Update () {
         transform.Rotate(rotationAxis, -rotate);
         rotate = rotateDegrees * Mathf.Pow(deltaDegree, easeInFactor);
         deltaDegree += speed;

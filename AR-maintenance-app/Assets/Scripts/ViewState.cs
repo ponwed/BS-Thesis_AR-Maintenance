@@ -7,7 +7,7 @@ public class ViewState : MonoBehaviour {
     int state;
     int stateCount;
     Transform marker;
-    public GameObject tracker; // Passed via Unity GUI
+    public GameObject tracker;
     public RenderSmallMarker renderStep3, renderStep8;
     public int sleighStepIndex, sleighStepIndexTwo;
     public GameObject directionObject;
@@ -19,6 +19,9 @@ public class ViewState : MonoBehaviour {
         Initialize();
     }
 
+    /// <summary>
+    /// Registers the number of states in a given marker. 
+    /// </summary>
     public void Initialize()
     {
         state = 0;
@@ -44,7 +47,6 @@ public class ViewState : MonoBehaviour {
         if (state >= stateCount - 1) return;
         state++;
         Toggle();
-        Debug.Log("Next state: " + state);
     }
 
     /// <summary>
@@ -55,14 +57,21 @@ public class ViewState : MonoBehaviour {
         if (state <= 0) return;
         state--;
         Toggle();
-        Debug.Log("Previous state " + state);
     }
 
+    /// <summary>
+    /// Returns whether the current state the last.
+    /// </summary>
+    /// <returns>True if current state is last, false otherwise.</returns>
     public bool AtLastState()
     {
         return state == stateCount - 1;
     }
 
+    /// <summary>
+    /// Returns whether the current state the fist.
+    /// </summary>
+    /// <returns>True if current state is fist, false otherwise.</returns>
     public bool AtFirstState()
     {
         return state == 0;
@@ -86,13 +95,14 @@ public class ViewState : MonoBehaviour {
                 caption.SetVisibility(visible);
             }
 
+            // Set visibility for the respective child
             foreach (var r in child.GetComponentsInChildren<Renderer>(true))
             {
                 r.enabled = visible;
             }           
         }
 
-        /* Special case for sled marker */
+        // Special case for sled marker
         if (state == sleighStepIndex)
             renderStep3.Render(true);
         else if (state == sleighStepIndexTwo)
@@ -105,6 +115,10 @@ public class ViewState : MonoBehaviour {
             
     }
 
+    /// <summary>
+    /// Returns the current state.
+    /// </summary>
+    /// <returns>The current state</returns>
     public int GetState()
     {
         return state;

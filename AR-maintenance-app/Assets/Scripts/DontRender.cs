@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class DontRender : MonoBehaviour {
 
-	void Start () {
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
+    void Start () {
         gameObject.SetActive(false);
 	}
 

@@ -7,10 +7,16 @@ public class PersistentTracking : MonoBehaviour {
 
     public bool persistentTracking;
 
-	void Start () {
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
+    void Start () {
         VuforiaARController.Instance.RegisterVuforiaStartedCallback(OnVuforiaStarted);
 	}
 
+    /// <summary>
+    /// Change tracking method to persist extended tracking
+    /// </summary>
 	void OnVuforiaStarted () {
         ObjectTracker tracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
         bool success = tracker.PersistExtendedTracking(persistentTracking);

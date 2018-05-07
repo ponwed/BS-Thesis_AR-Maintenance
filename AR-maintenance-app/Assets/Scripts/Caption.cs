@@ -11,9 +11,8 @@ public class Caption : MonoBehaviour {
     public int minFontSize = 20;
     public int maxFontSize = 52;
 
-
-	/// <summary>
-    /// Constructor
+    /// <summary>
+    /// Initialization of the instance.
     /// </summary>
 	void Start () {
         canvas = Instantiate(canvas);

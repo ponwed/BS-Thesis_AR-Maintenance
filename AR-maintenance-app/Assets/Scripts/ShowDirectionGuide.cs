@@ -6,11 +6,15 @@ public class ShowDirectionGuide : MonoBehaviour
 {
 
     public GameObject directionObject;
+
     private DirectionGuide directionGuide;
     private float screenWidth, screenHeight;
     private float screenFraction = 5;
     private Camera cam;
 
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
     void Start()
     {
         directionGuide = directionObject.GetComponent<DirectionGuide>();
@@ -20,6 +24,9 @@ public class ShowDirectionGuide : MonoBehaviour
         screenWidth = Screen.width;
     }
 
+    /// <summary>
+    /// Runs once every frame
+    /// </summary>
     void Update()
     {
         if (GetComponent<Renderer>().enabled)

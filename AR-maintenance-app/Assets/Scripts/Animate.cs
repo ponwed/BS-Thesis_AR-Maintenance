@@ -13,7 +13,6 @@ public enum Axis {
 
 public class Animate : MonoBehaviour {
 
-    // Public settings
     public Axis axis;
     public float distance = 1.0f;
     public int easeInFactor = 2;
@@ -22,25 +21,25 @@ public class Animate : MonoBehaviour {
     private Vector3 origin;
     private float deltaPosition;
 
-	/// <summary>
-    /// Run on initialization
+    /// <summary>
+    /// Initialization of the instance.
     /// </summary>
 	void Start () {
         origin = transform.position;
         deltaPosition = 0.0f;
 	}
-	
-	/// <summary>
-    /// Runs every frame
+
+    /// <summary>
+    /// Runs once every frame
     /// </summary>
-	void Update () {
+    void Update () {
         var x = origin.x;
         var y = origin.y;
         var z = origin.z;
 
         float moveDistance = distance * Mathf.Pow(deltaPosition, easeInFactor);
 
-        // Scalse moving distance by object scale and add distance to chosen axis
+        // Scales moving distance by object scale and add distance to chosen axis
         switch(axis)
         {
             case Axis.X:

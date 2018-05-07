@@ -10,11 +10,17 @@ public class RenderControl : MonoBehaviour {
     private IEnumerable<TrackableBehaviour> trackables;
     private Renderer centerCubeRend;
 
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
     void Start ()
     {
         centerCubeRend = GameObject.Find("CenterCube").GetComponent<Renderer>();
     }
 	
+    /// <summary>
+    /// Runs once every frame
+    /// </summary>
 	void Update ()
     {
         sm = TrackerManager.Instance.GetStateManager();

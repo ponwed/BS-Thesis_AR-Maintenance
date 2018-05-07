@@ -6,11 +6,17 @@ public class DirectionGuide : MonoBehaviour {
 
     private Transform target;
 
-	void Start () {
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
+    void Start () {
         
 	}
 
-	void Update () {
+    /// <summary>
+    /// Runs once every frame
+    /// </summary>
+    void Update () {
         if (target == null)
         {
             Hide();
@@ -21,6 +27,9 @@ public class DirectionGuide : MonoBehaviour {
         }     
 	}
 
+    /// <summary>
+    /// Show direction guide.
+    /// </summary>
     public void Show()
     {
         GetComponent<Renderer>().enabled = true;
@@ -31,6 +40,9 @@ public class DirectionGuide : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Hide direction guide.
+    /// </summary>
     public void Hide()
     {
         GetComponent<Renderer>().enabled = false;
@@ -41,6 +53,10 @@ public class DirectionGuide : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Set target to guide direction to.
+    /// </summary>
+    /// <param name="target">The target</param>
     public void SetTarget(Transform target)
     {
         this.target = target;

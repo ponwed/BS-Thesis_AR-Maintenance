@@ -3,12 +3,13 @@ using UnityEngine.UI;
 
 public class ButtonBehaviour : MonoBehaviour {
 
-    private Button btn;
     public ViewState state;
     public bool isNext;
 
+    private Button btn;
+
     /// <summary>
-    /// Constructor
+    /// Initialization of the instance.
     /// </summary>
     void Start () {
         btn = GetComponent<Button>();

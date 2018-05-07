@@ -8,11 +8,17 @@ public class SwapCanvas : MonoBehaviour {
 
     public Canvas fromCanvas, toCanvas;
 
-	void Start () {
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
+    void Start () {
         Button btn = GetComponent<Button>();
         btn.onClick.AddListener(Swap);
 	}
 	
+    /// <summary>
+    /// Swap which canvas to render.
+    /// </summary>
 	void Swap()
     {
         fromCanvas.enabled = false;

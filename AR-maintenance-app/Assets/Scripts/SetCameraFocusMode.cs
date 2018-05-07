@@ -15,20 +15,31 @@ public enum FocusModes
 public class SetCameraFocusMode : MonoBehaviour {
 
     public FocusModes focusMode;
+
     private bool mVuforiaStarted = false;
 
-	void Start () {
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
+    void Start () {
         var vuforia = VuforiaARController.Instance;
         vuforia.RegisterVuforiaStartedCallback(OnVuforiaStarted);
         vuforia.RegisterOnPauseCallback(OnApplicationPause);
     }
 
+    /// <summary>
+    /// Set focus mode as soon as Vuforia is loaded.
+    /// </summary>
     private void OnVuforiaStarted()
     {
         mVuforiaStarted = true;
         SetFocusMode();
     }
 
+    /// <summary>
+    /// Restore focus mode after applications has been paused.
+    /// </summary>
+    /// <param name="pause">If applications is paused.</param>
     private void OnApplicationPause(bool pause)
     {
         if (!pause)
@@ -40,6 +51,9 @@ public class SetCameraFocusMode : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Set focus mode to selected mode.
+    /// </summary>
     private void SetFocusMode()
     {
         switch (focusMode)

@@ -6,16 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour {
 
-    private Button btn;
     public ViewState viewState;
 
-	void Start () {
+    private Button btn;
+
+    /// <summary>
+    /// Initialization of the instance.
+    /// </summary>
+    void Start () {
         btn = GetComponent<Button>();
         btn.onClick.AddListener(ExitApp);
 
         Hide();
     }
 
+    /// <summary>
+    /// Runs once every frame
+    /// </summary>
     void Update()
     {
         if(viewState.AtLastState())
@@ -26,11 +33,18 @@ public class Reset : MonoBehaviour {
             Hide();
         }
     }
+
+    /// <summary>
+    /// Close the application
+    /// </summary>
     void ExitApp()
     {
         Application.Quit();
     }
 
+    /// <summary>
+    /// Hide the GUI elements
+    /// </summary>
     void Hide()
     {
         btn.GetComponent<Image>().enabled = false;
@@ -38,6 +52,9 @@ public class Reset : MonoBehaviour {
         btn.GetComponentInChildren<Text>().enabled = false;
     }
 
+    /// <summary>
+    /// Show the GUI elements
+    /// </summary>
     void Show()
     {
         btn.GetComponent<Image>().enabled = true;
